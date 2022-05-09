@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  transition: all 0.3s ease;
+}
+
+body {
+  animation: opening 0.3s ease-in-out;
+  font-family: "Poppins", "Lato", sans-serif;
+  background: $gradient1;
+  color: white;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: $header1;
+}
+li,
+button,
+label,
+input,
+p,
+a,
+select {
+  font-size: $text;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+h4,
+h5 {
+  font-size: $header4;
+}
+ul {
+  list-style: none;
+}
+button,
+select {
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  transition: transform 1s ease;
+}
+
+button,
+a,
+input,
+textarea {
+  &:focus {
+    outline: none;
+  }
+  padding: 1rem;
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 45%;
+  }
+}

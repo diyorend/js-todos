@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body {
+  -webkit-animation: opening 0.3s ease-in-out;
+          animation: opening 0.3s ease-in-out;
+  font-family: "Poppins", "Lato", sans-serif;
+  background: linear-gradient(120deg, #d6b958, #a5553f);
+  color: white;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+li,
+button,
+label,
+input,
+p,
+a,
+select {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4,
+h5 {
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+select {
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+button,
+a,
+input,
+textarea {
+  padding: 1rem;
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+@-webkit-keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+form,
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 20vh;
+}
+
+form input,
+form button {
+  background: white;
+  border: none;
+}
+
+form button {
+  background: white;
+  color: black;
+}
+
+form button:hover {
+  background: black;
+  color: white;
+}
+
+.todo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 4rem 2rem;
+  min-height: 60vh;
+}
+
+.todo-list {
+  min-width: 70%;
+  margin: auto;
+}
+
+.todo {
+  border-radius: 1rem;
+  color: #000;
+  background: #fff;
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.todo li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 1rem;
+}
+
+.complete-btn {
+  background: white;
+  color: #11c842;
+}
+
+.complete-btn:hover {
+  background: #11c842;
+  color: white;
+}
+
+.trash-btn {
+  background: white;
+  color: crimson;
+}
+
+.trash-btn:hover {
+  background: crimson;
+  color: white;
+}
+
+.trash-btn,
+form button {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+form input {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.fall {
+  -webkit-transform: translateY(60%) rotateY(20deg) scale(0.8);
+          transform: translateY(60%) rotateY(20deg) scale(0.8);
+  opacity: 0.3;
+}
+
+select {
+  border-radius: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background: #151515;
+}
+
+select:hover, select:focus {
+  color: #000;
+  background: #fff;
+}
+
+.select {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient1: linear-gradient(120deg, #d6b958, #a5553f);
+$gradient: -webkit-linear-gradient(left, #38d39f, #38a4d3);
+$check-color: #11c842;
+$trash-color: crimson;
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "global";
+@import "intro";
